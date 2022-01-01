@@ -1,7 +1,7 @@
 import express, { Application} from "express";
 import db from "./config/db.config";
 import morgan from "morgan";
-import router from "./resources/endpoints/product.endpoints";
+import router from "./resources/endpoints/Router";
 
 
 class App {

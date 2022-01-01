@@ -9,10 +9,10 @@ execute asynchronously with the program. This way we can keep querys processing 
 */
 
 router.post(
-    "/post", async (req: Request, res: Response)=> {
+    "/post", async (req: Request, res: Response) => {
         try{
             const object = await Product.create(req.body);
-            return res.json({object, msg: "Post correct"});
+            return res.json({object, status: "Post correct"});
         }catch(e){
             return res.json({message: "fail to post", status: 500, route: "/post"});
         }
@@ -22,7 +22,7 @@ router.post(
 router.get("/get", async (req: Request, res: Response)=> {
     try{
         const object = await Product.findAll({where: {}});
-        return res.json({object, msg: "Get correct", objects_returned: object.length});
+        return res.json({object, status: "Get correct", objects_returned: object.length});
     }catch(e){
         return res.json({message: "fail to get", status: 500, route: "/get"});
     }
@@ -42,7 +42,7 @@ router.put("/update/:name", async (req: Request, res: Response) => {
             price: req.body.price,
         });
 
-        return res.json({objectUpdated, message: name + " updated correctly."});
+        return res.json({objectUpdated, status: name + " updated correctly."});
     }catch(e){
         return res.json({message: "fail to update", status: 500, route: "/update"})
     }
@@ -57,7 +57,7 @@ router.delete("/delete/:name", async (req: Request, res: Response) => {
 
         await objectToDelete.destroy();
 
-        return res.json({message: name + " deleted correctly"});
+        return res.json({status: name + " deleted correctly"});
 
     }catch(e){
         return res.json({message: "fail to update", status: 500, route: "/update"})

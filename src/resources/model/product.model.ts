@@ -6,17 +6,25 @@ import db from "../../config/db.config";
 class Product extends Model<ProductInterface>{}
 
 Product.init({
+    id:{
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        allowNull: false
+    },
     name: {
         type: DataTypes.STRING,
         allowNull: false,
+        unique: false
     },
     amount: {
         type: DataTypes.NUMBER,
         allowNull: false,
+        unique: false
     },
     price: {
         type: DataTypes.NUMBER,
         allowNull: false,
+        unique: false
     }
 }, {
     sequelize: db,
