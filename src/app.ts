@@ -1,7 +1,11 @@
 import express, { Application} from "express";
 import db from "./config/db.config";
 import morgan from "morgan";
-import router from "./resources/endpoints/Router";
+import RouterCRUD from "./resources/endpoints/product.router";
+import RouterUser from "./resources/endpoints/user.router";
+import dotenv from "dotenv";
+
+dotenv.config(); //Configure env variables in project
 
 
 class App {
@@ -28,7 +32,9 @@ class App {
         this.express.use(express.json());
         this.express.use(morgan('dev')); //morgan module tracks api request and logs them
 
-        this.express.use("/api", router);
+        //calling express middleware to set created routes
+        this.express.use("/api", RouterCRUD);
+        this.express.use("/api", RouterUser);
     }
 
 

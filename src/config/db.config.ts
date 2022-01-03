@@ -1,6 +1,6 @@
 import {Sequelize} from "sequelize";
 
-const db = new Sequelize("productos", "", "", {
+const db = new Sequelize("bbdd", "", "", {
     storage: "./database.sqlite",
     dialect: "sqlite",
     logging: false,
