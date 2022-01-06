@@ -70,7 +70,7 @@ npm run build
 ```
 npm run dev
 ```
-### Traspile to ./dist/
+### Transpile to ./dist/
 ```
 npm run start
 ```
