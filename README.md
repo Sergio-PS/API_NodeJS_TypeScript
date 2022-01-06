@@ -3,7 +3,7 @@
 
 ### Response in JSON format. 
 ### Required register or login to recieve token given in json. 
-### Authentication mode: Bearer. Instert Authenticaiton Bearer token to obtain data.
+### Authentication mode: Bearer. Instert Authentication Bearer token to obtain data.
 
 ```
 Todo:
