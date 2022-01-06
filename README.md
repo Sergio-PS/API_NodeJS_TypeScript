@@ -58,22 +58,18 @@ API INFO:
     }
 ```
 
-
 ## Project setup
 ```
 npm install
 ```
-
 ### Builds project.
 ```
 npm run build
 ```
-
 ### Run server with --respawn
 ```
 npm run dev
 ```
-
 ### Traspile to ./dist/
 ```
 npm run start
