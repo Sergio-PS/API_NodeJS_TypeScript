@@ -1,11 +1,9 @@
 # API REST Server
 Back-end API REST NodeJS + TypeScript + SQLITE + JSON WEB TOKEN.
-<br>
-- Response in JSON format. 
-<br>
-- Required register or login to recieve token given in json. 
-<br>
-- Authentication mode: Bearer. Instert Authenticaiton Bearer token to obtain data.
+
+##Response in JSON format. 
+##Required register or login to recieve token given in json. 
+##Authentication mode: Bearer. Instert Authenticaiton Bearer token to obtain data.
 
 ```
 Todo:
