@@ -28,6 +28,7 @@ SQLITE INFO:
         password
     }
 ```
+<br>
 API INFO:
     - endpoints: {
         User:
