@@ -13,7 +13,7 @@ Todo:
 ```
 <br>
 Located in: http://localhost:8000
-<br>
+
 ```
 SQLITE INFO:
     product: {
@@ -28,7 +28,8 @@ SQLITE INFO:
         password
     }
 ```
-<br>
+
+```
 API INFO:
     - endpoints: {
         User:
@@ -55,7 +56,7 @@ API INFO:
                 Authentication Bearer Token
                 No Body required
     }
-
+```
 
 
 ## Project setup
